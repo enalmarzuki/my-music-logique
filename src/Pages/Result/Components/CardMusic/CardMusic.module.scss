@@ -1,0 +1,74 @@
+@import '../../../../Data/Variables.scss';
+
+.card-wrapper {
+  padding: 12px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: $White;
+  display: flex;
+
+  .card-img-wrapper {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      object-fit: cover;
+    }
+  }
+
+  .card-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .card-singer-name {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.36px;
+      color: $TextSecondary;
+      margin-bottom: 5px;
+    }
+
+    .card-singer,
+    .card-singer-feat {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: $TextSecondary;
+    }
+
+    .card-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .card-tag {
+        background-color: #10b981;
+        padding: 4px 13px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.36px;
+        color: $White;
+      }
+    }
+
+    .card-footer-right {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+}

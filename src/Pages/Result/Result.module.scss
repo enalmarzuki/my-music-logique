@@ -1,0 +1,127 @@
+@import '../../Data//Variables.scss';
+
+.container {
+  background-color: $ContentPrimary;
+  height: 100vh;
+  position: relative;
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 0 6px 0 rgba(148, 77, 230, 0.75);
+    background-image: linear-gradient(
+      100deg,
+      $PrimaryPurple,
+      $SecondaryPurple 100%
+    );
+    border-bottom-left-radius: 43% 27%;
+    border-bottom-right-radius: 42% 21%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      &:nth-child(1) {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+      &:nth-child(2) {
+        width: 73px;
+        height: 16px;
+        margin-bottom: 10px;
+      }
+      &:nth-child(3) {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .search-key-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search-key-title {
+      color: $TextSecondary;
+      letter-spacing: 0.5px;
+      font-size: 14px;
+    }
+
+    .search-key {
+      color: $PrimaryPurple;
+      font-size: 18px;
+      letter-spacing: 0.64px;
+      font-weight: bold;
+      margin-left: 8px;
+      text-transform: capitalize;
+    }
+  }
+
+  .load-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .btn-rnd-load-more {
+      padding: 10px 29px;
+      border-radius: 20px;
+      text-align: center;
+      outline: none;
+      border: none;
+      background-color: #e2e8f0;
+      transition: all 0.3s ease-in-out;
+      color: $BlueGray;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(28, 28, 45, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding: 30px;
+    z-index: 999;
+
+    .modal-ic-close {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 20px;
+      right: 18px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.71px;
+      color: $White;
+      text-align: center;
+    }
+  }
+}

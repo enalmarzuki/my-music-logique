@@ -1,0 +1,20 @@
+@import '../../Data//Variables.scss';
+
+.btn-rnd-secondary {
+  padding: 13px 8px;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+  color: $White;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
