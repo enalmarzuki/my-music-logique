@@ -3,7 +3,13 @@
 .container {
   background-color: $ContentPrimary;
   height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .navbar {
     position: sticky;
